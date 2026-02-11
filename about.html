@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Safari Insider</title>
+
+    <!-- Font Awesome (for future icons consistency) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+            line-height: 1.7;
+            color: #3a2a00;
+            background: linear-gradient(135deg, #f6e6b4, #d4af37);
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: linear-gradient(90deg, #d4af37, #b8860b);
+            padding: 14px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 700;
+            color: #fffaf0;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #fffaf0;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 20px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            background: rgba(255, 250, 240, 0.2);
+        }
+
+        .nav-links li a.active {
+            background: #fffaf0;
+            color: #b8860b;
+            font-weight: 600;
+        }
+
+        /* CONTENT */
+        .container {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 50px 30px;
+            background: #fffaf0;
+            border-radius: 14px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        }
+
+        h1, h2 {
+            color: #b8860b;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        .intro {
+            font-style: italic;
+            font-size: 1.1rem;
+            margin-bottom: 50px;
+            text-align: center;
+            color: #6b5a2b;
+        }
+
+        /* Founder Section */
+        .founder-section {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+
+        .founder-image {
+            flex: 1;
+            text-align: center;
+        }
+
+        .founder-image img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #d4af37;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .founder-text {
+            flex: 2;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section p {
+            margin-bottom: 15px;
+        }
+
+        .invitation {
+            background: linear-gradient(135deg, #fff4cc, #f1d98a);
+            padding: 30px;
+            border-left: 6px solid #b8860b;
+            border-radius: 8px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .founder-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #6b5a2b;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Safari Insider</div>
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- ABOUT CONTENT -->
+<div class="container">
+
+    <h1>About Safari Insider</h1>
+
+    <p class="intro">
+        “I believe that a true safari isn’t something you just see , it’s something you feel.
+        It’s the smell of the rain on the red dust of Tsavo, the rhythm of the Great Migration
+        in the Mara, and the warmth of a Kenyan smile that makes you feel like you’ve finally come home.”
+    </p>
+
+    <div class="founder-section">
+        <div class="founder-image">
+            <img src="images/founder.jpeg" alt="Rachel Chebet - Founder of Safari Insider">
+        </div>
+
+        <div class="founder-text">
+            <h2>Who I Am</h2>
+            <p><strong>My name is Rachel Chebet</strong>, and I am the heart behind Safari Insider.</p>
+            <p>
+                I didn’t just start this brand to book hotels; I started it to share the soul of my country with the world. While I have spent years studying the intricate logistics of tourism and the science of hospitality, my true education came from growing up in the beauty of Kenya.
+            </p>
+            <p>
+                I am a local who knows the “secret” spots that don’t make it into the brochures,the quiet viewpoints, the most authentic cultural encounters, and the boutique camps where the land is respected.
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>My Promise to You</h2>
+        <p>
+                           When you plan a trip with me, you aren’t just another booking in a system.
+
+                You are a guest in my home. I bridge the gap between your high expectations
+
+                for comfort and safety and the raw, unedited beauty of the African wild.
+        </p>
+        <p>
+           Whether it is navigating the 2026 ETA process or finding the perfect sundowner spot overlooking the Rift Valley, I handle the details so you can focus on the wonder.
+        </p>
+    </div>
+
+    <div class="section invitation">
+        <h2>The Invitation — Your Journey</h2>
+        <p>
+            Planning a trip to Africa is a milestone,a dream that deserves care.
+            I would love to walk this journey with you.
+        </p>
+        <p>
+           From our first discovery call to the moment you board your flight home, I will be your “insider” on the ground, ensuring every moment is as magical as you imagined.
+        </p>
+        <p>
+            <strong>Are you ready to begin?</strong>
+        </p>
+    </div>
+
+    <footer>
+        © 2026 Safari Insider · Authentic African Safari Stories
+    </footer>
+
+</div>
+
+</body>
+</html>

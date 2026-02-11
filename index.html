@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Insider | Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        /* NAVBAR */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            background: linear-gradient(90deg, #d4af37, #b8860b);
+            padding: 14px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+        }
+.logo {
+    font-size: 32px;   /* BIGGER & clearer */
+    font-weight: 800;
+    color: #fffaf0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fffaf0;
+            font-weight: 500;
+            padding: 8px 14px;
+            border-radius: 20px;
+            transition: background 0.3s ease, color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background: rgba(255, 250, 240, 0.2);
+        }
+
+        .nav-links a.active {
+            background: #fffaf0;
+            color: #b8860b;
+            font-weight: 600;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            height: 100vh;
+            background:
+                linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                url('images/index2.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .center-text {
+            margin-top: 120px;
+        }
+
+        .center-text h2 {
+            font-size: 2.4rem;
+            margin-bottom: 12px;
+            font-style: italic;
+            color: #f6e6b4;
+        }
+
+        .center-text p {
+            font-size: 1.3rem;
+            color: #fffaf0;
+        }
+
+        .bottom-text {
+            margin-top: 60px;
+        }
+
+        .cta-button {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 18px 40px;
+            display: inline-block;
+            background-color: #cc5500;
+            border-radius: 10px;
+            font-size: 1.4rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #e67333;
+            transform: scale(1.05);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .center-text h2 {
+                font-size: 1.9rem;
+            }
+
+            .nav-links {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Safari Insider</div>
+    <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="center-text">
+        <h2>“To travel is to live”</h2>
+        <p>Your journey begins…</p>
+    </div>
+
+    <div class="bottom-text">
+        <a href="contact.html" class="cta-button">Start planning my safari</a>
+    </div>
+</section>
+
+</body>
+</html>
